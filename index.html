@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Order summary card</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+    .music{
+
+
+      height:30px;
+      width:30px;
+      /* float:left; */
+      padding:10px;
+      position:absolute;
+      top:10px;
+      left:10px;
+      /* border-radius:80px; */
+    }
+    body{
+      font-size:16px;
+      background-color:  hsl(225, 100%, 94%);
+    }
+    .plan-bar{
+      height:700px;
+      background-color:  white;
+      width:50%;
+      position:relative;
+
+      left:350px;
+      border-style:dotted;
+      border-color: white;
+    }
+    /* p{
+      line-height: 1.5;
+    } */
+    .annual-plan{
+      border-style:dotted;
+      border-color: hsl(225, 100%, 98%);
+      background-color: hsl(225, 100%, 98%);
+      height:100px;
+      width:40%px;
+      position:relative;
+      margin:auto;
+      padding:10px;
+      margin:40px;
+      border-radius:20px;
+
+    }
+    .para{
+      position :absolute;
+      top:3px;
+      left:60px;
+      display:inline;
+      margin-left:10px;
+
+    }
+    .summary{
+      color:grey;
+      width:500px;
+      margin:auto;
+      text-align: center;
+    }
+    h1{
+      text-align: center;
+    }
+    .change{
+      text-decoration: none;
+
+      position:absolute;
+      top:30px;
+      left:500px;
+    }
+    .cost{
+      position :absolute;
+      top:20px;
+      left:60px;
+      padding-top:5px;
+      display:inline;
+      margin-left:10px;
+      color:grey;
+
+    }
+    .music-human{
+      width:100%;
+      height:200px;
+      margin:0px;
+
+    }
+    .proceed-button{
+      position:absolute;
+      top:550px;
+      left:50px;
+      background-color:  hsl(245, 75%, 52%);
+      border-radius: 20px;
+      font-size:1.5rem;
+      color:white;
+      width:600px;
+      height:50px;
+      box-shadow: 5px 2px;
+    }
+    .cancel-order{
+      position:absolute;
+      top:600px;background-color: white;
+      border-style:none;
+      border-radius: 20px;
+      font-size:1.5rem;
+      color:grey;
+      width:600px;
+      height:50px;
+      left:50px;
+      margin-top:20px;
+
+
+
+    }
+  </style>
+</head>
+<body>
+
+
+
+  <div class="plan-bar">
+    <img class="music-human" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRO0yeI-bg4atTmIiN0r3E3nmPq0_GWnV1Krw&usqp=CAU" alt="music image" />
+    <h1>Order Summary</h1>
+
+    <p class="summary">You can now listen to millions of songs, audiobooks, and podcasts on any
+    device anywhere you like!</p>
+    <div class="annual-plan">
+      <img class="music" src="https://image.flaticon.com/icons/png/128/876/876817.png" alt="music image">
+      <p class="para">Annual Plan<br />
+        <p class="cost">
+          $59.99/year
+
+        </p>
+      <a class="change" href="">change</a>
+
+        <!-- Proceed to Payment
+        Cancel Order -->
+
+
+    </div>
+    <form>
+      <button class="proceed-button">Proceed to Payment</button>
+      <button class="cancel-order">cancel order</button>
+    </form>
+
+
+  </div>
+
+
+
+
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+</body>
+</html>
